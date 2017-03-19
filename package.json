@@ -1,0 +1,35 @@
+{
+    "name": "essence",
+    "displayName": "Essence Language",
+    "description": "Syntax highlighting for the Essence specification language",
+    "version": "0.9.0",
+    "publisher": "bilalsyedhussain",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "essence",
+            "aliases": ["Essence", "essence"],
+                "extensions": [
+                    ".essence",
+                    ".eprime",
+                    ".param",
+                    ".essence-param",
+                    ".eprime-param",
+                    ".solution",
+                    ".eprime-solution",
+                    ".essence-solution"
+                ],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "essence",
+            "scopeName": "source.essence",
+            "path": "./syntaxes/Essence.tmLanguage"
+        }]
+    }
+}
